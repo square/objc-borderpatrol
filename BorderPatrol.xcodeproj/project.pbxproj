@@ -8,13 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A8250FE115784974007B73E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FE015784974007B73E2 /* Foundation.framework */; };
-		A8250FE715784974007B73E2 /* BorderPatrol.m in Sources */ = {isa = PBXBuildFile; fileRef = A8250FE615784974007B73E2 /* BorderPatrol.m */; };
 		A8250FEF15784974007B73E2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FEE15784974007B73E2 /* SenTestingKit.framework */; };
 		A8250FF115784974007B73E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FF015784974007B73E2 /* UIKit.framework */; };
 		A8250FF215784974007B73E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FE015784974007B73E2 /* Foundation.framework */; };
 		A8250FF515784974007B73E2 /* libBorderPatrol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FDD15784974007B73E2 /* libBorderPatrol.a */; };
 		A8250FFB15784974007B73E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8250FF915784974007B73E2 /* InfoPlist.strings */; };
-		A8250FFE15784974007B73E2 /* BorderPatrolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8250FFD15784974007B73E2 /* BorderPatrolTests.m */; };
+		A825105215784CF9007B73E2 /* BPPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = A825104E15784CF9007B73E2 /* BPPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A825105315784CF9007B73E2 /* BPPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = A825104F15784CF9007B73E2 /* BPPolygon.m */; };
+		A825105415784CF9007B73E2 /* BPPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = A825104F15784CF9007B73E2 /* BPPolygon.m */; };
+		A825105515784CF9007B73E2 /* BPRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = A825105015784CF9007B73E2 /* BPRegion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A825105615784CF9007B73E2 /* BPRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = A825105115784CF9007B73E2 /* BPRegion.m */; };
+		A825105715784CF9007B73E2 /* BPRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = A825105115784CF9007B73E2 /* BPRegion.m */; };
+		A825105E15784D10007B73E2 /* BPPolygonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A825105915784D10007B73E2 /* BPPolygonTests.m */; };
+		A825105F15784D10007B73E2 /* BPRegionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A825105B15784D10007B73E2 /* BPRegionTests.m */; };
+		A825106015784D10007B73E2 /* colorado-test.kml in Resources */ = {isa = PBXBuildFile; fileRef = A825105C15784D10007B73E2 /* colorado-test.kml */; };
+		A825106115784D10007B73E2 /* multi-polygon-test.kml in Resources */ = {isa = PBXBuildFile; fileRef = A825105D15784D10007B73E2 /* multi-polygon-test.kml */; };
+		A825106315784D3B007B73E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A825106215784D3B007B73E2 /* CoreLocation.framework */; };
+		A825106415784D42007B73E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A825106215784D3B007B73E2 /* CoreLocation.framework */; };
+		A825106515784D85007B73E2 /* BorderPatrol.h in Headers */ = {isa = PBXBuildFile; fileRef = A8250FE515784974007B73E2 /* BorderPatrol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +41,24 @@
 /* Begin PBXFileReference section */
 		A8250FDD15784974007B73E2 /* libBorderPatrol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBorderPatrol.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8250FE015784974007B73E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A8250FE415784974007B73E2 /* BorderPatrol-Prefix.pch */ = {isa = PBXFileReference; path = "BorderPatrol-Prefix.pch"; sourceTree = "<group>"; };
-		A8250FE515784974007B73E2 /* BorderPatrol.h */ = {isa = PBXFileReference; path = BorderPatrol.h; sourceTree = "<group>"; };
-		A8250FE615784974007B73E2 /* BorderPatrol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderPatrol.m; sourceTree = "<group>"; };
+		A8250FE415784974007B73E2 /* BorderPatrol-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BorderPatrol-Prefix.pch"; sourceTree = "<group>"; };
+		A8250FE515784974007B73E2 /* BorderPatrol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderPatrol.h; sourceTree = "<group>"; };
 		A8250FED15784974007B73E2 /* BorderPatrolTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BorderPatrolTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8250FEE15784974007B73E2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A8250FF015784974007B73E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A8250FF815784974007B73E2 /* BorderPatrolTests-Info.plist */ = {isa = PBXFileReference; path = "BorderPatrolTests-Info.plist"; sourceTree = "<group>"; };
+		A8250FF815784974007B73E2 /* BorderPatrolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BorderPatrolTests-Info.plist"; sourceTree = "<group>"; };
 		A8250FFA15784974007B73E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A8250FFC15784974007B73E2 /* BorderPatrolTests.h */ = {isa = PBXFileReference; path = BorderPatrolTests.h; sourceTree = "<group>"; };
-		A8250FFD15784974007B73E2 /* BorderPatrolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderPatrolTests.m; sourceTree = "<group>"; };
+		A825104E15784CF9007B73E2 /* BPPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPolygon.h; sourceTree = "<group>"; };
+		A825104F15784CF9007B73E2 /* BPPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPolygon.m; sourceTree = "<group>"; };
+		A825105015784CF9007B73E2 /* BPRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRegion.h; sourceTree = "<group>"; };
+		A825105115784CF9007B73E2 /* BPRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRegion.m; sourceTree = "<group>"; };
+		A825105815784D10007B73E2 /* BPPolygonTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPolygonTests.h; sourceTree = "<group>"; };
+		A825105915784D10007B73E2 /* BPPolygonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPolygonTests.m; sourceTree = "<group>"; };
+		A825105A15784D10007B73E2 /* BPRegionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRegionTests.h; sourceTree = "<group>"; };
+		A825105B15784D10007B73E2 /* BPRegionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRegionTests.m; sourceTree = "<group>"; };
+		A825105C15784D10007B73E2 /* colorado-test.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "colorado-test.kml"; sourceTree = "<group>"; };
+		A825105D15784D10007B73E2 /* multi-polygon-test.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "multi-polygon-test.kml"; sourceTree = "<group>"; };
+		A825106215784D3B007B73E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A825106315784D3B007B73E2 /* CoreLocation.framework in Frameworks */,
 				A8250FE115784974007B73E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A825106415784D42007B73E2 /* CoreLocation.framework in Frameworks */,
 				A8250FEF15784974007B73E2 /* SenTestingKit.framework in Frameworks */,
 				A8250FF115784974007B73E2 /* UIKit.framework in Frameworks */,
 				A8250FF215784974007B73E2 /* Foundation.framework in Frameworks */,
@@ -87,6 +108,7 @@
 		A8250FDF15784974007B73E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A825106215784D3B007B73E2 /* CoreLocation.framework */,
 				A8250FE015784974007B73E2 /* Foundation.framework */,
 				A8250FEE15784974007B73E2 /* SenTestingKit.framework */,
 				A8250FF015784974007B73E2 /* UIKit.framework */,
@@ -98,7 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				A8250FE515784974007B73E2 /* BorderPatrol.h */,
-				A8250FE615784974007B73E2 /* BorderPatrol.m */,
+				A825104E15784CF9007B73E2 /* BPPolygon.h */,
+				A825104F15784CF9007B73E2 /* BPPolygon.m */,
+				A825105015784CF9007B73E2 /* BPRegion.h */,
+				A825105115784CF9007B73E2 /* BPRegion.m */,
 				A8250FE315784974007B73E2 /* Supporting Files */,
 			);
 			path = BorderPatrol;
@@ -115,8 +140,10 @@
 		A8250FF615784974007B73E2 /* BorderPatrolTests */ = {
 			isa = PBXGroup;
 			children = (
-				A8250FFC15784974007B73E2 /* BorderPatrolTests.h */,
-				A8250FFD15784974007B73E2 /* BorderPatrolTests.m */,
+				A825105815784D10007B73E2 /* BPPolygonTests.h */,
+				A825105915784D10007B73E2 /* BPPolygonTests.m */,
+				A825105A15784D10007B73E2 /* BPRegionTests.h */,
+				A825105B15784D10007B73E2 /* BPRegionTests.m */,
 				A8250FF715784974007B73E2 /* Supporting Files */,
 			);
 			path = BorderPatrolTests;
@@ -125,6 +152,8 @@
 		A8250FF715784974007B73E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A825105C15784D10007B73E2 /* colorado-test.kml */,
+				A825105D15784D10007B73E2 /* multi-polygon-test.kml */,
 				A8250FF815784974007B73E2 /* BorderPatrolTests-Info.plist */,
 				A8250FF915784974007B73E2 /* InfoPlist.strings */,
 			);
@@ -138,6 +167,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A825105215784CF9007B73E2 /* BPPolygon.h in Headers */,
+				A825105515784CF9007B73E2 /* BPRegion.h in Headers */,
+				A825106515784D85007B73E2 /* BorderPatrol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8250FFB15784974007B73E2 /* InfoPlist.strings in Resources */,
+				A825106015784D10007B73E2 /* colorado-test.kml in Resources */,
+				A825106115784D10007B73E2 /* multi-polygon-test.kml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8250FE715784974007B73E2 /* BorderPatrol.m in Sources */,
+				A825105315784CF9007B73E2 /* BPPolygon.m in Sources */,
+				A825105615784CF9007B73E2 /* BPRegion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8250FFE15784974007B73E2 /* BorderPatrolTests.m in Sources */,
+				A825105415784CF9007B73E2 /* BPPolygon.m in Sources */,
+				A825105715784CF9007B73E2 /* BPRegion.m in Sources */,
+				A825105E15784D10007B73E2 /* BPPolygonTests.m in Sources */,
+				A825105F15784D10007B73E2 /* BPRegionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,5 @@
 //  Copyright (c) 2012 Square, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface BorderPatrol : NSObject
-
-@end
+#import "BPRegion.h"
+#import "BPPolygon.h"
