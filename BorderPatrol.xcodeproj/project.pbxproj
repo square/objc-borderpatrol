@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8250FE115784974007B73E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FE015784974007B73E2 /* Foundation.framework */; };
+		A8250FE715784974007B73E2 /* BorderPatrol.m in Sources */ = {isa = PBXBuildFile; fileRef = A8250FE615784974007B73E2 /* BorderPatrol.m */; };
+		A8250FEF15784974007B73E2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FEE15784974007B73E2 /* SenTestingKit.framework */; };
+		A8250FF115784974007B73E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FF015784974007B73E2 /* UIKit.framework */; };
+		A8250FF215784974007B73E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FE015784974007B73E2 /* Foundation.framework */; };
+		A8250FF515784974007B73E2 /* libBorderPatrol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8250FDD15784974007B73E2 /* libBorderPatrol.a */; };
+		A8250FFB15784974007B73E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8250FF915784974007B73E2 /* InfoPlist.strings */; };
+		A8250FFE15784974007B73E2 /* BorderPatrolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8250FFD15784974007B73E2 /* BorderPatrolTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8250FF315784974007B73E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8250FD415784974007B73E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8250FDC15784974007B73E2;
+			remoteInfo = BorderPatrol;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8250FDD15784974007B73E2 /* libBorderPatrol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBorderPatrol.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8250FE015784974007B73E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A8250FE415784974007B73E2 /* BorderPatrol-Prefix.pch */ = {isa = PBXFileReference; path = "BorderPatrol-Prefix.pch"; sourceTree = "<group>"; };
+		A8250FE515784974007B73E2 /* BorderPatrol.h */ = {isa = PBXFileReference; path = BorderPatrol.h; sourceTree = "<group>"; };
+		A8250FE615784974007B73E2 /* BorderPatrol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderPatrol.m; sourceTree = "<group>"; };
+		A8250FED15784974007B73E2 /* BorderPatrolTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BorderPatrolTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8250FEE15784974007B73E2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A8250FF015784974007B73E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A8250FF815784974007B73E2 /* BorderPatrolTests-Info.plist */ = {isa = PBXFileReference; path = "BorderPatrolTests-Info.plist"; sourceTree = "<group>"; };
+		A8250FFA15784974007B73E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8250FFC15784974007B73E2 /* BorderPatrolTests.h */ = {isa = PBXFileReference; path = BorderPatrolTests.h; sourceTree = "<group>"; };
+		A8250FFD15784974007B73E2 /* BorderPatrolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderPatrolTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8250FDA15784974007B73E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8250FE115784974007B73E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8250FE915784974007B73E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8250FEF15784974007B73E2 /* SenTestingKit.framework in Frameworks */,
+				A8250FF115784974007B73E2 /* UIKit.framework in Frameworks */,
+				A8250FF215784974007B73E2 /* Foundation.framework in Frameworks */,
+				A8250FF515784974007B73E2 /* libBorderPatrol.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8250FD215784974007B73E2 = {
+			isa = PBXGroup;
+			children = (
+				A8250FE215784974007B73E2 /* BorderPatrol */,
+				A8250FF615784974007B73E2 /* BorderPatrolTests */,
+				A8250FDF15784974007B73E2 /* Frameworks */,
+				A8250FDE15784974007B73E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8250FDE15784974007B73E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8250FDD15784974007B73E2 /* libBorderPatrol.a */,
+				A8250FED15784974007B73E2 /* BorderPatrolTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8250FDF15784974007B73E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8250FE015784974007B73E2 /* Foundation.framework */,
+				A8250FEE15784974007B73E2 /* SenTestingKit.framework */,
+				A8250FF015784974007B73E2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8250FE215784974007B73E2 /* BorderPatrol */ = {
+			isa = PBXGroup;
+			children = (
+				A8250FE515784974007B73E2 /* BorderPatrol.h */,
+				A8250FE615784974007B73E2 /* BorderPatrol.m */,
+				A8250FE315784974007B73E2 /* Supporting Files */,
+			);
+			path = BorderPatrol;
+			sourceTree = "<group>";
+		};
+		A8250FE315784974007B73E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8250FE415784974007B73E2 /* BorderPatrol-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8250FF615784974007B73E2 /* BorderPatrolTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8250FFC15784974007B73E2 /* BorderPatrolTests.h */,
+				A8250FFD15784974007B73E2 /* BorderPatrolTests.m */,
+				A8250FF715784974007B73E2 /* Supporting Files */,
+			);
+			path = BorderPatrolTests;
+			sourceTree = "<group>";
+		};
+		A8250FF715784974007B73E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8250FF815784974007B73E2 /* BorderPatrolTests-Info.plist */,
+				A8250FF915784974007B73E2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A8250FDB15784974007B73E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A8250FDC15784974007B73E2 /* BorderPatrol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A825100115784974007B73E2 /* Build configuration list for PBXNativeTarget "BorderPatrol" */;
+			buildPhases = (
+				A8250FD915784974007B73E2 /* Sources */,
+				A8250FDA15784974007B73E2 /* Frameworks */,
+				A8250FDB15784974007B73E2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BorderPatrol;
+			productName = BorderPatrol;
+			productReference = A8250FDD15784974007B73E2 /* libBorderPatrol.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A8250FEC15784974007B73E2 /* BorderPatrolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A825100415784974007B73E2 /* Build configuration list for PBXNativeTarget "BorderPatrolTests" */;
+			buildPhases = (
+				A8250FE815784974007B73E2 /* Sources */,
+				A8250FE915784974007B73E2 /* Frameworks */,
+				A8250FEA15784974007B73E2 /* Resources */,
+				A8250FEB15784974007B73E2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8250FF415784974007B73E2 /* PBXTargetDependency */,
+			);
+			name = BorderPatrolTests;
+			productName = BorderPatrolTests;
+			productReference = A8250FED15784974007B73E2 /* BorderPatrolTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8250FD415784974007B73E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Square, Inc";
+			};
+			buildConfigurationList = A8250FD715784974007B73E2 /* Build configuration list for PBXProject "BorderPatrol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A8250FD215784974007B73E2;
+			productRefGroup = A8250FDE15784974007B73E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8250FDC15784974007B73E2 /* BorderPatrol */,
+				A8250FEC15784974007B73E2 /* BorderPatrolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8250FEA15784974007B73E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8250FFB15784974007B73E2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8250FEB15784974007B73E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8250FD915784974007B73E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8250FE715784974007B73E2 /* BorderPatrol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8250FE815784974007B73E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8250FFE15784974007B73E2 /* BorderPatrolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8250FF415784974007B73E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8250FDC15784974007B73E2 /* BorderPatrol */;
+			targetProxy = A8250FF315784974007B73E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8250FF915784974007B73E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8250FFA15784974007B73E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8250FFF15784974007B73E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A825100015784974007B73E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A825100215784974007B73E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BorderPatrol.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BorderPatrol/BorderPatrol-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A825100315784974007B73E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BorderPatrol.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BorderPatrol/BorderPatrol-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A825100515784974007B73E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BorderPatrol/BorderPatrol-Prefix.pch";
+				INFOPLIST_FILE = "BorderPatrolTests/BorderPatrolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A825100615784974007B73E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BorderPatrol/BorderPatrol-Prefix.pch";
+				INFOPLIST_FILE = "BorderPatrolTests/BorderPatrolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8250FD715784974007B73E2 /* Build configuration list for PBXProject "BorderPatrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8250FFF15784974007B73E2 /* Debug */,
+				A825100015784974007B73E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A825100115784974007B73E2 /* Build configuration list for PBXNativeTarget "BorderPatrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A825100215784974007B73E2 /* Debug */,
+				A825100315784974007B73E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A825100415784974007B73E2 /* Build configuration list for PBXNativeTarget "BorderPatrolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A825100515784974007B73E2 /* Debug */,
+				A825100615784974007B73E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8250FD415784974007B73E2 /* Project object */;
+}
