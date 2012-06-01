@@ -10,6 +10,9 @@
 #import "BPRegion.h"
 #import "BPPolygon.h"
 
+#include <sys/resource.h>
+#include <sys/time.h>
+
 @implementation BPRegionTests
 
 - (void)testRegionWithContentsOfColorado;
@@ -62,6 +65,55 @@
 
     coordinate = CLLocationCoordinate2DMake(35, 35);
     STAssertTrue([region containsCoordinate:coordinate], @"Region that contains a coordinate in another polygon should return true");
+}
+
+- (void)testBenchmarks;
+{
+    BPRegion *colorado = [BPRegion regionWithContentsOfURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"colorado-test" withExtension:@"kml"]];
+    BPRegion *multiPolygon = [BPRegion regionWithContentsOfURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"multi-polygon-test" withExtension:@"kml"]];
+    
+    void (^benchmark)(NSString *, void (^)()) = ^(NSString *label, void (^code)()) {
+        struct rusage usage, usageAfter;
+        CFAbsoluteTime absoluteTime, absoluteTimeAfter;
+
+        getrusage(RUSAGE_SELF, &usage);
+        absoluteTime = CFAbsoluteTimeGetCurrent();
+
+        code();
+        
+        getrusage(RUSAGE_SELF, &usageAfter);
+        absoluteTimeAfter = CFAbsoluteTimeGetCurrent();
+        
+        long userSec = usageAfter.ru_utime.tv_sec - usage.ru_utime.tv_sec;
+        long userUsec = usageAfter.ru_utime.tv_usec - usage.ru_utime.tv_usec;
+        long sysSec = usageAfter.ru_stime.tv_sec - usage.ru_stime.tv_sec;
+        long sysUsec = usageAfter.ru_stime.tv_usec - usage.ru_stime.tv_usec;
+        long totalSec = userSec + sysSec;
+        long totalUsec = userUsec + sysUsec;
+        
+        if (totalUsec > 1000000) {
+            totalUsec -= 1000000;
+            totalSec += 1;
+        }
+        
+        CFAbsoluteTime real = absoluteTimeAfter - absoluteTime;
+        
+        NSLog(@"%@ %3ld.%06ld %3ld.%06ld %3ld.%06ld (%3.06f)", label, userSec, userUsec, sysSec, sysUsec, totalSec, totalUsec, real);
+    };
+    
+    NSLog(@"                    user     system     total       real");
+    benchmark(@"     Colorado", ^{
+        for (int index = 0; index < 10000; index++) {
+            CLLocationCoordinate2D randomPoint = CLLocationCoordinate2DMake(random() % 180 - 90, random() % 360 - 180);
+            (void)[colorado containsCoordinate:randomPoint];
+        }
+    });
+    benchmark(@"Multi Polygon", ^{
+        for (int index = 0; index < 10000; index++) {
+            CLLocationCoordinate2D randomPoint = CLLocationCoordinate2DMake(random() % 180 - 90, random() % 360 - 180);
+            (void)[multiPolygon containsCoordinate:randomPoint];
+        }
+    });
 }
 
 @end
