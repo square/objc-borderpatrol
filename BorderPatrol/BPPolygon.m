@@ -20,10 +20,21 @@
     return [[self alloc] initWithCoordinates:coordinates count:count];
 }
 
++ (BPPolygon *)polygonWithLocations:(NSArray *)locations
+{
+    int count = [locations count];
+    CLLocationCoordinate2D cArray[count];
+    for (int i = 0; i < count; i++){
+        cArray[i] = [[locations objectAtIndex:i] coordinate];
+    }
+    
+    return [[self alloc] initWithCoordinates:cArray count:count];
+}
+
 - (id)initWithCoordinates:(CLLocationCoordinate2D *)coordinates count:(NSUInteger)count;
 {
     NSAssert(count > 2, @"Need more than two coordinates to make a polygon");
-
+    
     self = [super init];
     if (!self) {
         return nil;
@@ -55,7 +66,7 @@
         if (_coordinates[index].longitude == coordinate.longitude && _coordinates[index].latitude == coordinate.latitude) {
             return YES;
         }
-
+        
         if (_coordinates[index].latitude < minLatitude) {
             minLatitude = _coordinates[index].latitude;
         }
@@ -72,7 +83,7 @@
     if (coordinate.latitude < minLatitude || coordinate.latitude > maxLatitude || coordinate.longitude < minLongitude || coordinate.longitude > maxLongitude) {
         return NO;
     }
-        
+    
     // Step 2: cast two rays in "random" directions
     // For a ray going straight to the right, loop through each side;
     // the coordinate lat must be between the points on the side
