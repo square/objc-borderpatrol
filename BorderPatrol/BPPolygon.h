@@ -13,6 +13,7 @@
 @interface BPPolygon : NSObject
 
 + (BPPolygon *)polygonWithCoordinates:(CLLocationCoordinate2D *)coordinates count:(NSUInteger)count;
++ (BPPolygon *)polygonWithLocations:(NSArray *)locations;
 
 @property (nonatomic, readonly) CLLocationCoordinate2D *coordinates;
 @property (nonatomic, readonly) NSUInteger coordinateCount;
