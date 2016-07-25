@@ -22,7 +22,7 @@
 
 + (BPPolygon *)polygonWithLocations:(NSArray *)locations
 {
-    int count = [locations count];
+    NSUInteger count = [locations count];
     CLLocationCoordinate2D cArray[count];
     for (int i = 0; i < count; i++){
         cArray[i] = [[locations objectAtIndex:i] coordinate];
