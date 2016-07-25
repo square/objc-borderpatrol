@@ -210,7 +210,7 @@
 			name = BorderPatrolTests;
 			productName = BorderPatrolTests;
 			productReference = A8250FED15784974007B73E2 /* BorderPatrolTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -356,6 +356,7 @@
 		A825100215784974007B73E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/BorderPatrol.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BorderPatrol/BorderPatrol-Prefix.pch";
@@ -368,6 +369,7 @@
 		A825100315784974007B73E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/BorderPatrol.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BorderPatrol/BorderPatrol-Prefix.pch";
@@ -426,6 +428,7 @@
 				A825100315784974007B73E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A825100415784974007B73E2 /* Build configuration list for PBXNativeTarget "BorderPatrolTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +437,7 @@
 				A825100615784974007B73E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
